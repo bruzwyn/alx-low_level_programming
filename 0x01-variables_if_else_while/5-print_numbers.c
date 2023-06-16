@@ -12,4 +12,5 @@ for (n = 0; n <= 9; n++)
 printf("%d", n);
 }
 printf("\n");
-return (0);
+return 0;
+}
