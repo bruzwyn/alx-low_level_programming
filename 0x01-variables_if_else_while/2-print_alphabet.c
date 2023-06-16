@@ -1,17 +1,17 @@
 #include <stdlib.h>
 #include <ctype.h>
 /**
- * main -  program that prints the alphabet in lowercase, followed by a new line.
+ * main -  Entry point
  *
  * Return: 0 on success
  */
 int main(void)
 {
-int lowerCase = 'a';
-while (lowerCase <= 'z')
+int lowerCase = '97';
+while (lowerCase <= '122')
 {
 putchar(lowercase);
-lowerCase += 1;
+lowerCase++;
 }
 putchar('\n');
 return (0);
