@@ -1,4 +1,4 @@
-#include <stdlib.h>
+#include <stdio.h>
 #include <ctype.h>
 /**
  * main -  Entry point
@@ -7,11 +7,11 @@
  */
 int main(void)
 {
-int lowerCase = '97';
-while (lowerCase <= '122')
+int n = 97;
+while (n <= 122)
 {
-putchar(lowercase);
-lowerCase++;
+	putchar(n);
+n++;
 }
 putchar('\n');
 return (0);
