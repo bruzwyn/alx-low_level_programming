@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
 * main - tests function that prints if interger is positive
 * Return: 0
