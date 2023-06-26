@@ -3,7 +3,7 @@
 /**
  * Swap_int -swaps the values of two intergers.
  *
- * @n: The first interger to be swapped.
+ * @a: The first interger to be swapped.
  * @b: The second interger to be swapped.
  * return: nothing
  */
