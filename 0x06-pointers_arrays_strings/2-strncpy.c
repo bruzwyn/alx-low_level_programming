@@ -3,9 +3,9 @@
 /**
  * _strncpy - Copies at most an inputed number
  * of bytes from string src into dest.
- * @dest: The buffer stroring the string copy.
+ * @dest: The buffer storing the string copy.
  * @src: The source string.
- * @n: The number of bytes to be copied from src.
+ * @n: The maximum number of bytes to be copied from src.
  * Return: A pointer to the resulting string dest.
  */
 
