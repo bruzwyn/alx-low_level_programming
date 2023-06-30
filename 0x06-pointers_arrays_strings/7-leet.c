@@ -23,5 +23,5 @@ n[i] = s2[j];
 }
 }
 }
-return (0);
+return (n);
 }
