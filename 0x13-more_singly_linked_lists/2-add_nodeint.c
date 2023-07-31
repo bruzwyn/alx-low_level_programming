@@ -3,7 +3,8 @@
 
 /**
  * add_nodeint - adds a new node at beginning of a list
- * @n: variable list to print
+ * @head: Double pointer to the head of the linked list
+ * @n: Integer value to be added to the new node.
  * Description: singly linked list node to add
  *
  * Return: address of new element or NULL if failed
