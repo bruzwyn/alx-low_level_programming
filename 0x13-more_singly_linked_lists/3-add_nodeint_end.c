@@ -22,7 +22,7 @@ if (!new)
 return (NULL);
 
 new->n = n;
-new->next = *null;
+new->next = NULL;
 
 if (*head == NULL)
 	{
