@@ -4,7 +4,7 @@
 /**
  * flip_bits -  returns the number of bits you would need to flip to get
  * from one number to another.
- * 
+ *
  * @n: the first number
  * @m: the second number
  *
@@ -21,7 +21,7 @@ while (calc)
 
 {
 count++;
-calc &= (calc -1);
+calc &= (calc - 1);
 }
 
 return (count);
