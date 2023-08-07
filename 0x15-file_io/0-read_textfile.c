@@ -23,7 +23,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 {
 
-ssize_t read_file, write_file, fp;
+ssize_t op, read_file, write_file;
 char *buffer;
 
 if (filename == NULL)
@@ -31,28 +31,28 @@ if (filename == NULL)
 {
 return (0);
 }
-fp = open(filename, O_RDONLY);
+op = open(filename, O_RDONLY);
 
 
 buffer = malloc(sizeof(char) * letters);
 if (buffer == NULL)
 
 {
-close(fp);
+close(op);
 return (0);
 }
 
-read_file = read(fp, buffer, letters);
+read_file = read(op, buffer, letters);
 
 write_file = write(STDOUT_FILENO, buffer, read_file);
 
-if (fp == -1 || read_file == -1 || write_file == -1 || write_file != read_file)
+if (op == -1 || read_file == -1 || write_file == -1 || write_file != read_file)
 {
 free(buffer);
 return (0);
 }
 
 return (write_file);
-close(fp);
+close(op);
 free(buffer);
 }
