@@ -28,19 +28,17 @@ char *buffer;
 
 if (filename == NULL)
 
-{
 return (0);
-}
-op = open(filename, O_RDONLY);
 
 
 buffer = malloc(sizeof(char) * letters);
 if (buffer == NULL)
 
 {
-close(op);
 return (0);
 }
+
+op = open(filename, O_RDONLY);
 
 read_file = read(op, buffer, letters);
 
