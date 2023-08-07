@@ -34,9 +34,7 @@ return (0);
 buffer = malloc(sizeof(char) * letters);
 if (buffer == NULL)
 
-{
 return (0);
-}
 
 op = open(filename, O_RDONLY);
 
@@ -50,7 +48,8 @@ free(buffer);
 return (0);
 }
 
-return (write_file);
 close(op);
 free(buffer);
+
+return (write_file);
 }
